@@ -151,6 +151,9 @@ let useFetch = async (...args) => {
 	return await fetch(...args);
 };
 
+let submitCount = 0;
+let trialCount = 0;
+
 let workCycle = async function () {
 	console.debug(`\nDo not run this to Make Twitter Great Again!\n`);
 	let randomCityData = getCity();
@@ -184,6 +187,10 @@ let workCycle = async function () {
 	console.debug(`Getting CSRF Token...`);
 	let getCsrfTokenResponse = await (await useFetch("https://petition.theamericapac.org/api/auth")).json();
 	let csrfToken = getCsrfTokenResponse.csrfToken;
+	if (!csrfToken) {
+		console.debug(`CSRF fetch failure. Canceled the current attempt.`);
+		return;
+	};
 	//console.debug(`CSRF Token: ${csrfToken}`);
 	console.debug(`Submitting...`);
 	let submitterResponse = await useFetch("https://petition.theamericapac.org/api/check-registration", {
@@ -193,8 +200,13 @@ let workCycle = async function () {
 		},
 		"body": JSON.stringify(submitData)
 	});
+	trialCount ++;
+	if (submitterResponse.status > 199 && submitterResponse.status < 300) {
+		submitCount ++;
+	};
 	console.debug(`Submit result below.`);
 	console.debug(await submitterResponse.json());
+	console.debug(`${trialCount} tried, ${submitCount} submitted.`);
 };
 await workCycle();
-setInterval(workCycle, 10000);
+setInterval(workCycle, 6000);
