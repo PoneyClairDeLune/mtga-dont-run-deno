@@ -13,5 +13,5 @@ deno run --allow-net index.js
 Or ever run the script directly...
 
 ```sh
-deno run --allow-net https://github.com/PoneyClairDeLune/mtga-dont-run-deno/raw/refs/heads/main/README.md
+deno run --allow-net https://github.com/PoneyClairDeLune/mtga-dont-run-deno/raw/refs/heads/main/index.js
 ```
