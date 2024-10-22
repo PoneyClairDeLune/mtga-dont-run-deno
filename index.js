@@ -264,16 +264,19 @@ let testCount = 0;
 let workCycle = async function () {
 	console.debug(`\nDo not run this to Make Twitter Great Again!\n`);
 	console.debug(`Getting CSRF Token...`);
-	let getCsrfTokenResponse = await (await useFetch("https://petition.theamericapac.org/api/auth")).text();
+	let getCsrfTokenResponse = await (await useFetch("https://petition.theamericapac.org/api/auth", {
+		"cache": "no-store"
+	})).text();
 	let csrfToken;
 	try {
-		csrfToken = JSON.stringify(getCsrfTokenResponse).csrfToken;
+		csrfToken = JSON.parse(getCsrfTokenResponse).csrfToken;
 	} catch (err) {
 		console.warn(err);
 	};
 	testCount ++;
 	if (!csrfToken) {
 		console.debug(`CSRF fetch failure. Canceled the current attempt.`);
+		console.debug(getCsrfTokenResponse.substring(0, 256));
 		console.debug(`${testCount} probed, ${trialCount} attempted, ${submitCount} submitted.`);
 		return;
 	};
