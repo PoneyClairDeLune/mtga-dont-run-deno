@@ -240,7 +240,7 @@ let getStreet = () => {
 	if (Math.random() < 0.4) {
 		return `${getRandom(getRandom(namePlaceBodies))} ${getRandom(namePlaceSuffix)}`;
 	} else {
-		return `${getRandom(nameLast)} ${getRandom(getRandom(nameListPoi))} ${getRandom(namePlaceSuffix)}`;
+		return `${getRandom(nameLast)} ${getRandom(nameListPoi)} ${getRandom(namePlaceSuffix)}`;
 	};
 };
 let getCity = () => {
