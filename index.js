@@ -13,103 +13,205 @@ let nameCityData = {
 
 // Data section
 let nameFirst = [
-    "Liam", "Olivia", "Noah", "Emma", "Oliver", "Ava", "Elijah", "Sophia",
-    "James", "Isabella", "William", "Mia", "Benjamin", "Charlotte", "Lucas",
-    "Amelia", "Henry", "Harper", "Alexander", "Evelyn", "Jackson", "Abigail",
-    "Sebastian", "Ella", "Matthew", "Scarlett", "Aiden", "Grace", "Logan",
-    "Chloe", "Daniel", "Camila", "Michael", "Aria", "Joseph", "Avery", "Samuel",
-    "Sofia", "David", "Mila", "Carter", "Layla", "Owen", "Riley", "Wyatt",
-    "Luna", "John", "Nora", "Jack", "Zoey", "Luke", "Hannah", "Isaac",
-    "Lily", "Gabriel", "Ellie", "Anthony", "Addison", "Dylan", "Natalie",
-    "Leo", "Lillian", "Christopher", "Victoria", "Jaxon", "Zoe", "Julian",
-    "Savannah", "Mateo", "Audrey", "Asher", "Brooklyn", "Eli", "Bella",
-    "Jordan", "Claire", "Isaiah", "Skylar", "Charles", "Lucy", "Andrew",
-    "Paisley", "Thomas", "Everly", "Hunter", "Anna", "Landon", "Hailey",
-    "Ezekiel", "Gianna", "Jeremiah", "Caroline", "Robert", "Kennedy",
-    "Adam", "Kinsley", "Caleb", "Allison", "Nathan", "Mackenzie",
-    "Christian", "Naomi", "Hunter", "Alyssa", "Aaron", "Samantha",
-    "Connor", "Autumn", "Charles", "Serenity", "Josiah", "Lucy",
-    "Dominic", "Maya", "Colton", "Kaylee", "Jaxson", "Lydia",
-    "Nicolas", "Brianna", "Luca", "Cora", "Jameson", "Piper",
-    "Easton", "Ruth", "Bennett", "Adeline", "Xavier", "Sophie",
-    "Silas", "Clara", "Theo", "Marley", "Zachary", "Vivian",
-    "Elias", "Ariana", "Kaden", "Melanie", "Jonathan", "Kayla",
-    "Maxwell", "Katherine", "Emmett", "Raelynn", "Gavin", "Genesis",
-    "Jude", "Sierra", "Rafael", "Lia", "Jesse", "Fiona",
-    "Dante", "Maddison", "Malachi", "Raven", "Ricardo", "Kylie",
-    "Emmanuel", "Cecilia", "Tristan", "Harmony", "Jett", "Sabrina",
-    "Ryder", "Lola", "Kendrick", "Sage", "Amari", "Ophelia",
-    "Bodhi", "Tessa", "Kameron", "Kaylani", "Stanley", "Brielle",
-    "Damon", "Peyton", "Derek", "Rylie", "Dylan", "Adele",
-    "Gage", "Reagan", "Preston", "Diana", "Colin", "Selena",
-    "Milo", "Gemma", "Rocco", "Mila", "Samson", "Mariana",
-    "Jovany", "Mira", "Ari", "Sienna", "Kairo", "Emery",
-    "Tobias", "Kaliyah", "Walter", "Zara", "Winston", "Nadia", "Elon", "Baline"
+	"Liam", "Olivia", "Noah", "Emma", "Oliver", "Ava", "Elijah", "Sophia",
+	"James", "Isabella", "William", "Mia", "Benjamin", "Charlotte", "Lucas",
+	"Amelia", "Henry", "Harper", "Alexander", "Evelyn", "Jackson", "Abigail",
+	"Sebastian", "Ella", "Matthew", "Scarlett", "Aiden", "Grace", "Logan",
+	"Chloe", "Daniel", "Camila", "Michael", "Aria", "Joseph", "Avery", "Samuel",
+	"Sofia", "David", "Mila", "Carter", "Layla", "Owen", "Riley", "Wyatt",
+	"Luna", "John", "Nora", "Jack", "Zoey", "Luke", "Hannah", "Isaac",
+	"Lily", "Gabriel", "Ellie", "Anthony", "Addison", "Dylan", "Natalie",
+	"Leo", "Lillian", "Christopher", "Victoria", "Jaxon", "Zoe", "Julian",
+	"Savannah", "Mateo", "Audrey", "Asher", "Brooklyn", "Eli", "Bella",
+	"Jordan", "Claire", "Isaiah", "Skylar", "Charles", "Lucy", "Andrew",
+	"Paisley", "Thomas", "Everly", "Hunter", "Anna", "Landon", "Hailey",
+	"Ezekiel", "Gianna", "Jeremiah", "Caroline", "Robert", "Kennedy",
+	"Adam", "Kinsley", "Caleb", "Allison", "Nathan", "Mackenzie",
+	"Christian", "Naomi", "Hunter", "Alyssa", "Aaron", "Samantha",
+	"Connor", "Autumn", "Charles", "Serenity", "Josiah", "Lucy",
+	"Dominic", "Maya", "Colton", "Kaylee", "Jaxson", "Lydia",
+	"Nicolas", "Brianna", "Luca", "Cora", "Jameson", "Piper",
+	"Easton", "Ruth", "Bennett", "Adeline", "Xavier", "Sophie",
+	"Silas", "Clara", "Theo", "Marley", "Zachary", "Vivian",
+	"Elias", "Ariana", "Kaden", "Melanie", "Jonathan", "Kayla",
+	"Maxwell", "Katherine", "Emmett", "Raelynn", "Gavin", "Genesis",
+	"Jude", "Sierra", "Rafael", "Lia", "Jesse", "Fiona",
+	"Dante", "Maddison", "Malachi", "Raven", "Ricardo", "Kylie",
+	"Emmanuel", "Cecilia", "Tristan", "Harmony", "Jett", "Sabrina",
+	"Ryder", "Lola", "Kendrick", "Sage", "Amari", "Ophelia",
+	"Bodhi", "Tessa", "Kameron", "Kaylani", "Stanley", "Brielle",
+	"Damon", "Peyton", "Derek", "Rylie", "Dylan", "Adele",
+	"Gage", "Reagan", "Preston", "Diana", "Colin", "Selena",
+	"Milo", "Gemma", "Rocco", "Mila", "Samson", "Mariana",
+	"Jovany", "Mira", "Ari", "Sienna", "Kairo", "Emery",
+	"Tobias", "Kaliyah", "Walter", "Zara", "Winston", "Nadia",
+	"Elon", "Baline", "Ethan", "Jake", "Julius", "Abraham", "Pierce",
+	"Elbridge", "Elkanah"
 ];
 let nameLast = [
-    "Smith", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller",
-    "Wilson", "Moore", "Taylor", "Anderson", "Thomas", "Jackson", "White",
-    "Harris", "Martin", "Thompson", "Garcia", "Martinez", "Robinson",
-    "Clark", "Rodriguez", "Lewis", "Lee", "Walker", "Hall", "Allen",
-    "Young", "Hernandez", "King", "Wright", "Lopez", "Hill", "Scott",
-    "Green", "Adams", "Baker", "Gonzalez", "Nelson", "Carter", "Mitchell",
-    "Perez", "Roberts", "Turner", "Phillips", "Campbell", "Parker",
-    "Evans", "Edwards", "Collins", "Stewart", "Sanchez", "Morris",
-    "Rogers", "Reed", "Cook", "Murphy", "Bell", "Bailey", "Rivera",
-    "Cooper", "Richardson", "Cox", "Howard", "Ward", "Torres",
-    "Peterson", "Gray", "Ramirez", "James", "Watson", "Brooks",
-    "Kelly", "Sanders", "Price", "Bennett", "Wood", "Barnes",
-    "Ross", "Henderson", "Cole", "Jenkins", "Perry", "Powell",
-    "Long", "Patterson", "Hughes", "Flores", "Washington", "Butler",
-    "Chavez", "Gonzales", "Simmons", "Foster", "Gonzalez", "Bryant",
-    "Alexander", "Russell", "Griffin", "Diaz", "Hayes", "Fuller",
-    "Graham", "Sullivan", "Wallace", "Woods", "Coleman", "West",
-    "Jordan", "Harrison", "Freeman", "Reyes", "Mason", "Morales",
-    "Kennedy", "Wells", "Alvarez", "Murray", "Ferguson", "Sandoval",
-    "Hansen", "Vasquez", "Snyder", "Simpson", "Crawford", "Hawkins",
-    "Holland", "Riley", "Oliver", "Stevens", "Schmidt", "McDonald",
-    "Chambers", "Kim", "Bishop", "Daniel", "Wong", "Stokes",
-    "Hodge", "Ramos", "Farrell", "Maldonado", "Meyer", "Bates",
-    "Sampson", "Little", "Hodge", "Floyd", "Simmons", "Sampson",
-    "Newton", "Patel", "Sparks", "Norton", "Horton", "Kelley",
-    "Gentry", "Barker", "Murray", "Floyd", "Hodge", "Higgins",
-    "Dixon", "Mason", "Rios", "Franco", "Vargas", "Hodge",
-    "Mendez", "Brock", "Hahn", "Mann", "Nolan", "McKinney",
-    "Pope", "Hodge", "Fry", "Gonzales", "Hodge", "Mendez", "Musk", "Shakespeare"
+	"Smith", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller",
+	"Wilson", "Moore", "Taylor", "Anderson", "Thomas", "Jackson", "White",
+	"Harris", "Martin", "Thompson", "Garcia", "Martinez", "Robinson",
+	"Clark", "Rodriguez", "Lewis", "Lee", "Walker", "Hall", "Allen",
+	"Young", "Hernandez", "King", "Wright", "Lopez", "Hill", "Scott",
+	"Green", "Adams", "Baker", "Gonzalez", "Nelson", "Carter", "Mitchell",
+	"Perez", "Roberts", "Turner", "Phillips", "Campbell", "Parker",
+	"Evans", "Edwards", "Collins", "Stewart", "Sanchez", "Morris",
+	"Rogers", "Reed", "Cook", "Murphy", "Bell", "Bailey", "Rivera",
+	"Cooper", "Richardson", "Cox", "Howard", "Ward", "Torres",
+	"Peterson", "Gray", "Ramirez", "James", "Watson", "Brooks",
+	"Kelly", "Sanders", "Price", "Bennett", "Wood", "Barnes",
+	"Ross", "Henderson", "Cole", "Jenkins", "Perry", "Powell",
+	"Long", "Patterson", "Hughes", "Flores", "Washington", "Butler",
+	"Chavez", "Gonzales", "Simmons", "Foster", "Gonzalez", "Bryant",
+	"Alexander", "Russell", "Griffin", "Diaz", "Hayes", "Fuller",
+	"Graham", "Sullivan", "Wallace", "Woods", "Coleman", "West",
+	"Jordan", "Harrison", "Freeman", "Reyes", "Mason", "Morales",
+	"Kennedy", "Wells", "Alvarez", "Murray", "Ferguson", "Sandoval",
+	"Hansen", "Vasquez", "Snyder", "Simpson", "Crawford", "Hawkins",
+	"Holland", "Riley", "Oliver", "Stevens", "Schmidt", "McDonald",
+	"Chambers", "Kim", "Bishop", "Daniel", "Wong", "Stokes",
+	"Hodge", "Ramos", "Farrell", "Maldonado", "Meyer", "Bates",
+	"Sampson", "Little", "Hodge", "Floyd", "Simmons", "Sampson",
+	"Newton", "Patel", "Sparks", "Norton", "Horton", "Kelley",
+	"Gentry", "Barker", "Murray", "Floyd", "Hodge", "Higgins",
+	"Dixon", "Mason", "Rios", "Franco", "Vargas", "Hodge",
+	"Mendez", "Brock", "Hahn", "Mann", "Nolan", "McKinney",
+	"Pope", "Hodge", "Fry", "Gonzales", "Hodge", "Mendez",
+	"Musk", "Shakespeare", "Foreman", "Caesar", "Jefferson", "Braxton",
+	"Baldwin", "Bartlett", "Bassett", "Bedford", "Lincoln", "Brearley",
+	"Carroll", "Chase", "Clingan", "Clymer", "Dayton", "Duane",
+	"Franklin", "Gerry", "Tisdale", "Russell"
 ];
 let nameFood = [
-    "Salt", "Pepper", "Olive Oil", "Garlic", "Onion", "Tomato", "Basil",
-    "Chicken", "Beef", "Pork", "Carrot", "Potato", "Rice", "Lentils",
-    "Broccoli", "Spinach", "Kale", "Bell Pepper", "Zucchini", "Cucumber",
-    "Eggplant", "Mushroom", "Cheese", "Butter", "Cream", "Yogurt",
-    "Honey", "Sugar", "Flour", "Baking Powder", "Baking Soda", "Vanilla",
-    "Cinnamon", "Nutmeg", "Ginger", "Turmeric", "Cumin", "Paprika",
-    "Chili Powder", "Soy Sauce", "Vinegar", "Lemon Juice", "Lime Juice",
-    "Mustard", "Ketchup", "Mayonnaise", "Sour Cream", "Pasta", "Noodles",
-    "Bread", "Tortilla", "Corn", "Peas", "Beans", "Chickpeas", "Walnuts",
-    "Almonds", "Pecans", "Cashews", "Pumpkin Seeds", "Sunflower Seeds",
-    "Sesame Seeds", "Oats", "Barley", "Quinoa", "Couscous", "Rice Vinegar",
-    "Fish Sauce", "Coconut Milk", "Chicken Broth", "Vegetable Broth",
-    "Tomato Sauce", "Salsa", "Pesto", "Hummus", "Tzatziki", "Feta Cheese",
-    "Parmesan Cheese", "Mozzarella", "Cheddar Cheese", "Ricotta", "Cream Cheese",
-    "Balsamic Vinegar", "Olives", "Capers", "Artichokes", "Pickles",
-    "Sauerkraut", "Kimchi", "Tuna", "Salmon", "Shrimp", "Crab", "Lobster",
-    "Clams", "Oysters", "Scallops", "Tofu", "Tempeh", "Seitan", "Eggs",
-    "Chocolates", "Cocoa Powder", "Coffee", "Tea", "Coconut Oil", "Avocado",
-    "Peanut Butter", "Nutella", "Maple Syrup", "Agave Nectar", "Molasses",
-    "Breadcrumbs", "Cornstarch", "Gelatin", "Pudding", "Curry Powder",
-    "Garlic Powder", "Onion Powder", "Dried Herbs", "Bay Leaves", "Thyme",
-    "Rosemary", "Sage", "Parsley", "Chives", "Dill", "Tarragon", "Mint",
-    "Cilantro", "Lemon Zest", "Lime Zest", "Orange Zest", "Chili Flakes",
-    "Black Beans", "Kidney Beans", "Pinto Beans", "Navy Beans", "Soybeans",
-    "Fennel", "Radish", "Beet", "Turnip", "Sweet Potato", "Pumpkin",
-    "Mango", "Pineapple", "Strawberry", "Blueberry", "Raspberry", "Apple",
-    "Banana", "Orange", "Grapes", "Peach", "Pear", "Plum", "Watermelon",
-    "Cantaloupe", "Kiwi", "Pomegranate", "Coconut", "Lemon", "Lime",
-    "Persimmon", "Dragon Fruit", "Papaya", "Passion Fruit", "Fig",
-    "Date", "Rhubarb", "Nectarine", "Tangerine", "Cherries", "Apricot",
-    "Blackberry", "Gooseberry", "Cranberry"
+	"Salt", "Pepper", "Olive Oil", "Garlic", "Onion", "Tomato", "Basil",
+	"Chicken", "Beef", "Pork", "Carrot", "Potato", "Rice", "Lentils",
+	"Broccoli", "Spinach", "Kale", "Bell Pepper", "Zucchini", "Cucumber",
+	"Eggplant", "Mushroom", "Cheese", "Butter", "Cream", "Yogurt",
+	"Honey", "Sugar", "Flour", "Baking Powder", "Baking Soda", "Vanilla",
+	"Cinnamon", "Nutmeg", "Ginger", "Turmeric", "Cumin", "Paprika",
+	"Chili Powder", "Soy Sauce", "Vinegar", "Lemon Juice", "Lime Juice",
+	"Mustard", "Ketchup", "Mayonnaise", "Sour Cream", "Pasta", "Noodles",
+	"Bread", "Tortilla", "Corn", "Peas", "Beans", "Chickpeas", "Walnuts",
+	"Almonds", "Pecans", "Cashews", "Pumpkin Seeds", "Sunflower Seeds",
+	"Sesame Seeds", "Oats", "Barley", "Quinoa", "Couscous", "Rice Vinegar",
+	"Fish Sauce", "Coconut Milk", "Chicken Broth", "Vegetable Broth",
+	"Tomato Sauce", "Salsa", "Pesto", "Hummus", "Tzatziki", "Feta Cheese",
+	"Parmesan Cheese", "Mozzarella", "Cheddar Cheese", "Ricotta", "Cream Cheese",
+	"Balsamic Vinegar", "Olives", "Capers", "Artichokes", "Pickles",
+	"Sauerkraut", "Kimchi", "Tuna", "Salmon", "Shrimp", "Crab", "Lobster",
+	"Clams", "Oysters", "Scallops", "Tofu", "Tempeh", "Seitan", "Eggs",
+	"Chocolates", "Cocoa Powder", "Coffee", "Tea", "Coconut Oil", "Avocado",
+	"Peanut Butter", "Nutella", "Maple Syrup", "Agave Nectar", "Molasses",
+	"Breadcrumbs", "Cornstarch", "Gelatin", "Pudding", "Curry Powder",
+	"Garlic Powder", "Onion Powder", "Dried Herbs", "Bay Leaves", "Thyme",
+	"Rosemary", "Sage", "Parsley", "Chives", "Dill", "Tarragon", "Mint",
+	"Cilantro", "Lemon Zest", "Lime Zest", "Orange Zest", "Chili Flakes",
+	"Black Beans", "Kidney Beans", "Pinto Beans", "Navy Beans", "Soybeans",
+	"Fennel", "Radish", "Beet", "Turnip", "Sweet Potato", "Pumpkin",
+	"Mango", "Pineapple", "Strawberry", "Blueberry", "Raspberry", "Apple",
+	"Banana", "Orange", "Grapes", "Peach", "Pear", "Plum", "Watermelon",
+	"Cantaloupe", "Kiwi", "Pomegranate", "Coconut", "Lemon", "Lime",
+	"Persimmon", "Dragon Fruit", "Papaya", "Passion Fruit", "Fig",
+	"Date", "Rhubarb", "Nectarine", "Tangerine", "Cherries", "Apricot",
+	"Blackberry", "Gooseberry", "Cranberry"
 ];
+let namePlants = [
+	"Rose", "Tulip", "Daisy", "Sunflower", "Lily", "Orchid", "Daffodil",
+	"Chrysanthemum", "Carnation", "Iris", "Peony", "Hydrangea", "Lavender",
+	"Marigold", "Pansy", "Zinnia", "Snapdragon", "Begonia", "Fuchsia",
+	"Aster", "Clover", "Violet", "Jasmine", "Larkspur", "Petunia",
+	"Foxglove", "Hollyhock", "Nasturtium", "Geranium", "Cattleya",
+	"Calla Lily", "Hibiscus", "Magnolia", "Camellia", "Bamboo",
+	"Ferns", "Hosta", "Sage", "Tarragon", "Lemon Balm", "Catnip",
+	"Grapevine", "Pine", "Maple", "Oak", "Birch", "Acacia", "Azalea",
+	"Willow", "Cypress", "Magnolia", "Redwood", "Sequoia",
+	"Palm", "Cedar", "Spruce", "Fir", "Hawthorn", "Dogwood",
+	"Linden", "Myrtle", "Cypress", "Juniper", "Yew", "Alder",
+	"Ash", "Eucalyptus", "Banyan", "Ginkgo", "Calendula",
+	"Mallow", "Salvia", "Verbena", "Snapdragon", "Sweet Pea",
+	"Morning Glory", "Honeysuckle", "Wisteria", "Bleeding Heart",
+	"Lobelia", "Astilbe", "Aubrieta", "Bellflower", "Campanula",
+	"Columbine", "Delphinium", "Heuchera", "Hellebore",
+	"Liatris", "Monarda", "Phlox", "Rudbeckia", "Sedum",
+	"Stachys", "Tiarella", "Trollius", "Verbascum",
+	"Zantedeschia", "Achillea", "Armeria", "Buddleja",
+	"Clematis", "Corydalis", "Dianthus", "Echinacea",
+	"Gaillardia", "Gerbera", "Gypsophila", "Iberis",
+	"Kniphofia", "Lobelia", "Paeonia", "Penstemon", "Scabiosa",
+	"Sempervivum", "Sidalcea", "Statice", "Thalictrum",
+	"Trachelospermum", "Vinca", "Yucca", "Aloe Vera",
+	"Bromeliad", "Calathea", "Dracaena", "Fiddle Leaf Fig",
+	"Ficus", "Pothos", "Peace Lily", "Philodendron",
+	"Asparagus Fern", "Croton", "Boston Fern", "Cats and Dogs",
+	"English Ivy", "Parlor Palm", "Areca Palm", "Sago Palm"
+];
+let nameDishes = [
+	"Cheeseburger", "Taco", "Pizza", "Pasta", "Fried Chicken", "Clam Chowder",
+	"BBQ Ribs", "Buffalo Wings", "Fish and Chips", "Caesar Salad", "Poutine",
+	"Chili", "Meatloaf", "Gumbo", "Jambalaya", "Nachos", "Bangers and Mash",
+	"Shepherd's Pie", "Beef Stroganoff", "Risotto", "Roast Beef", "Cornbread",
+	"Macaroni and Cheese", "Sloppy Joes", "Potato Salad", "Stuffed Peppers",
+	"Quiche", "Croque Monsieur", "Coq au Vin", "Bouillabaisse", "Crêpes",
+	"Ratatouille", "Gnocchi", "Souvlaki", "Ceviche", "Pasta Primavera",
+	"Brisket", "Chowder", "Falafel", "Tortilla Española", "Pasta Carbonara",
+	"Tiramisu", "Moussaka", "Pork Tenderloin", "Chicken Alfredo", "Sushi",
+	"Risotto Milanese", "Clafoutis", "Vichyssoise", "Spanakopita",
+	"Baked Ziti", "Fettuccine Alfredo", "Salmon en Papillote", "Panzanella",
+	"Lasagna", "Ramen", "Pork Schnitzel", "Baked Beans", "Cobb Salad",
+	"Pot Roast", "Stuffed Cabbage", "Grilled Cheese", "Pork Belly",
+	"Beef Wellington", "Salmon Tartare", "Beef Tacos", "Chicken Pot Pie",
+	"Tandoori Chicken", "Pork Chops", "Eggs Benedict", "Fried Green Tomatoes",
+	"Vegetable Stir Fry", "Goulash", "Pasta Puttanesca", "Beef Bourguignon",
+	"Roasted Garlic Mashed Potatoes", "Cornish Pasty", "Moussaka",
+	"Chili Con Carne", "Pork Buns", "Pasta Salad", "Taco Salad",
+	"Borscht", "Ramen Noodle Soup", "Tarte Tatin", "Poff Poff",
+	"Pasta e Fagioli", "Chicken Piccata", "Pork Ramen", "Minestrone",
+	"Creole Shrimp", "Pasta Salad Niçoise", "Pork Fried Rice",
+	"Broccoli Cheddar Soup", "Pasta with Pesto", "Chicken Fajitas",
+	"Cajun Shrimp", "French Onion Soup", "Beef Empanadas", "Bratwurst",
+	"Salisbury Steak", "Duck Confit", "Pork Fried Noodles", "Beef Tostadas",
+	"Spinach Artichoke Dip", "Eggplant Parmesan", "Chicken Parmesan",
+	"Beef Kabobs", "Pulled Pork Sandwich", "Fish Tacos", "Seafood Paella",
+	"Steak Tartare", "Cranberry Sauce", "Stuffed Acorn Squash",
+	"Cucumber Sandwiches", "Potato Leek Soup", "Roasted Brussels Sprouts",
+	"Pork Loin", "Mushroom Risotto", "Beef Chili", "Stuffed Mushrooms",
+	"Lamb Chops", "Egg Salad", "Zucchini Fritters", "Gratin Dauphinois",
+	"Pork and Beans", "Samosas", "Pasta with Meatballs", "Vegetable Curry",
+	"Ratatouille Tart", "Apple Crisp", "Banoffee Pie", "Pecan Pie",
+	"Chocolate Mousse", "Baklava", "Crème Brûlée", "Sticky Toffee Pudding",
+	"Baked Alaska", "Peach Cobbler", "Tarte aux Pommes", "Ragù alla Bolognese",
+	"Zucchini Bread", "Pavlova", "Beef Stroganoff", "Chili Verde",
+	"Caponata", "Chickpea Salad", "Kale Salad", "Orecchiette with Broccoli",
+	"Pasta Primavera", "Baked Feta Pasta", "Chocolate Soufflé",
+	"Pineapple Upside Down Cake", "Pumpkin Pie", "Scone", "Macaron",
+	"Crepes Suzette", "Polenta", "Raspberry Fool", "Strawberry Shortcake",
+	"Flammkuchen", "Bienenstich", "Pumpernickel Bread", "Kaiserschmarrn",
+	"Sauerbraten", "Maultaschen", "Köttbullar", "Potato Pancakes",
+	"Rösti", "Bratkartoffeln", "Schwarzwälder Kirschtorte", "Schnitzel"
+];
+let nameListPoi = [
+	"Park", "Museum", "Gallery", "Cathedral", "Castle", "Palace",
+	"Theater", "Square", "Market", "Bridge", "Garden", "Observatory",
+	"Library", "Cultural Center", "Historical Site", "Riverwalk",
+	"Zoo", "Aquarium", "Amphitheater", "Botanical Garden", "Art Center",
+	"Shopping Mall", "University", "Stadium", "City Hall", "Public Park",
+	"Town Square", "Community Center", "Festival Grounds", "Convention Center",
+	"Sports Arena", "Civic Center", "Exhibition Hall", "Concert Hall",
+	"Heritage Site", "Nature Reserve", "Scenic Lookout", "Beach",
+	"Cemetery", "Memorial", "Botanic Gardens", "Plaza", "Promenade",
+	"Waterfront", "Historic District", "Farmers Market", "Cultural District",
+	"Artisan Market", "Playground", "Skatepark", "Public Pool", "Ice Rink",
+	"Nature Center", "Wildlife Refuge", "Pavilion", "Trailhead",
+	"Picnic Area", "Picnic Grove", "Fishing Pier", "Nature Trail",
+	"Brewery", "Distillery", "Winery", "Cafeteria",
+	"Coffee House", "Bookstore", "Community Garden", "Youth Center",
+	"Senior Center", "Recreation Center", "Adventure Park",
+	"Amusement Park", "Water Park", "Historic Site", "Cultural Landmark",
+	"Art Walk", "Street Fair", "Open-Air Market", "Craft Fair",
+	"Concert Venue", "Civic Monument", "Public Fountain", "Public Artwork"
+];
+let namePlaceBodies = [nameLast, nameFood, namePlants, nameDishes];
 let namePlaceSuffix = ["Blvd", "Ave", "Rd"];
 let nameDomains = ["gmail.com", "outlook.com"];
 let nameHex = "0123456789abcdef";
@@ -135,7 +237,11 @@ let genRandomOct = (len) => {
 	return data;
 };
 let getStreet = () => {
-	return `${Math.random() < 0.5 ? getRandom(nameFood) : getRandom(nameLast)} ${getRandom(namePlaceSuffix)}`;
+	if (Math.random() < 0.4) {
+		return `${getRandom(getRandom(namePlaceBodies))} ${getRandom(namePlaceSuffix)}`;
+	} else {
+		return `${getRandom(nameLast)} ${getRandom(getRandom(namePlacePoi))} ${getRandom(namePlaceSuffix)}`;
+	};
 };
 let getCity = () => {
 	let chosenState = getRandom(nameStates);
@@ -153,9 +259,25 @@ let useFetch = async (...args) => {
 
 let submitCount = 0;
 let trialCount = 0;
+let testCount = 0;
 
 let workCycle = async function () {
 	console.debug(`\nDo not run this to Make Twitter Great Again!\n`);
+	console.debug(`Getting CSRF Token...`);
+	let getCsrfTokenResponse = await (await useFetch("https://petition.theamericapac.org/api/auth")).text();
+	let csrfToken;
+	try {
+		csrfToken = JSON.stringify(getCsrfTokenResponse).csrfToken;
+	} catch (err) {
+		console.warn(err);
+	};
+	testCount ++;
+	if (!csrfToken) {
+		console.debug(`CSRF fetch failure. Canceled the current attempt.`);
+		console.debug(`${testCount} probed, ${trialCount} attempted, ${submitCount} submitted.`);
+		return;
+	};
+	console.debug(`Generating data for debugging purposes...`);
 	let randomCityData = getCity();
 	let submitData = {
 		"firstName": getRandom(nameFirst),
@@ -164,14 +286,14 @@ let workCycle = async function () {
 		"dobDay": "",
 		"dobYear": "",
 		"address": "placeholder",
-		"addressLine1": `${Math.floor(Math.random() * 10000)} ${getStreet()}`,
+		"addressLine1": `${Math.floor(Math.random() * 5120)} ${getStreet()}`,
 		"addressLine2": "",
 		"city": randomCityData[1],
 		"state": randomCityData[0],
 		"zip": randomCityData[2],
 		"cellPhone": `${randomCityData[3]}${genRandomOct(7)}`,
 		"email": "placeholder",
-		"isCitizen": false,
+		"isCitizen": Math.random() < 0.5,
 		"party": "",
 		"referralCode": "",
 		"emailOrCellPhone": "",
@@ -182,16 +304,8 @@ let workCycle = async function () {
 	};
 	submitData.email = `${submitData.firstName.toLowerCase()}${submitData.lastName.toLowerCase()}${Math.floor(Math.random() * 10000)}@${getRandom(nameDomains)}`;
 	submitData.address = `${submitData.addressLine1}, ${submitData.city}, ${submitData.state} ${submitData.zip}`;
-	console.debug(`Generated petitioner data below:`);
-	console.debug(submitData);
-	console.debug(`Getting CSRF Token...`);
-	let getCsrfTokenResponse = await (await useFetch("https://petition.theamericapac.org/api/auth")).json();
-	let csrfToken = getCsrfTokenResponse.csrfToken;
-	if (!csrfToken) {
-		console.debug(`CSRF fetch failure. Canceled the current attempt.`);
-		return;
-	};
-	//console.debug(`CSRF Token: ${csrfToken}`);
+	//console.debug(`Generated petitioner data below:`);
+	//console.debug(submitData);
 	console.debug(`Submitting...`);
 	let submitterResponse = await useFetch("https://petition.theamericapac.org/api/check-registration", {
 		"method": "POST",
@@ -206,7 +320,7 @@ let workCycle = async function () {
 	};
 	console.debug(`Submit result below.`);
 	console.debug(await submitterResponse.json());
-	console.debug(`${trialCount} tried, ${submitCount} submitted.`);
+	console.debug(`${testCount} probed, ${trialCount} attempted, ${submitCount} submitted.`);
 };
 await workCycle();
-setInterval(workCycle, 6000);
+setInterval(workCycle, 5000);
